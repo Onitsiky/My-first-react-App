@@ -1,13 +1,22 @@
-export function MyLine (props){
-    const { Name, Position, Office, Age, StartDate, Salary } = props;
-    return(
-        <tr>
-            <td>{Name}</td>
-            <td>{Position}</td>
-            <td>{Office}</td>
-            <td>{Age}</td>
-            <td>{StartDate} </td>
-            <td>{Salary}</td>
-        </tr>
-    );
+import { data } from "./data";
+
+export function Myline(){
+        return(
+            <>
+                {
+                    data.map((data, key) =>{
+                        return(
+                        <tr>
+                            <td>{data.Name}</td>
+                            <td>{data.Position}</td>
+                            <td>{data.Office}</td>
+                            <td>{data.Age}</td>
+                            <td>{data.StartDate} </td>
+                            <td>{data.Salary}</td>
+                        </tr>
+                        )
+                    })
+                }
+            </>
+        )
 }
