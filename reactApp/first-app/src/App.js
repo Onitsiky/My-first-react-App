@@ -8,7 +8,7 @@ import { MySideNavF } from './MySideNavF';
 import { MySideNavH } from './MySideNavH';
 import { MySideNavI } from './MySideNavI';
 import { MyTBody } from './MyTBody';
-import { Myline } from './Myline';
+import { Myline } from './MyLine';
 
 function App() {
   return (
